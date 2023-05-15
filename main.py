@@ -8,8 +8,8 @@ JSON = "devices"
 printer = PrettyPrinter()
 
 headers = {
-    "client-id": "6cfd29c20e2f92dfca99814780d5f03bf91b4a69",
-    "client-secret": "bfe9c33f547019ea168e942ccc857585734e4908fe5baf76476a3a77d64ac93a33b846aa6c8ca252"
+    "client-id": "",
+    "client-secret": ""
 }
 response = get(URL + JSON, headers=headers)
 data = get(URL + JSON, headers=headers).json()
@@ -25,6 +25,5 @@ for device in data:
     print("____________________________________________")
 
 print("Status code: " + str(response.status_code))
-
 
 
